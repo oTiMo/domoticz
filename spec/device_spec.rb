@@ -9,7 +9,7 @@ describe Domoticz::Device do
 
     expect(devices.first.name).to eq "Switch 1"
     expect(devices.first.dimmer?).to be_truthy
-    expect(devices.first.idx).to eq "1"
+    expect(devices.first.idx).to eq 1
     expect(devices.first.type).to eq "Lighting 1"
     expect(devices.first.subtype).to eq "X10"
   end
@@ -22,7 +22,7 @@ describe Domoticz::Device do
 
     expect(device.name).to eq "Switch 1"
     expect(device.dimmer?).to be_truthy
-    expect(device.idx).to eq "1"
+    expect(device.idx).to eq 1
     expect(device.type).to eq "Lighting 1"
     expect(device.subtype).to eq "X10"
   end
@@ -103,5 +103,26 @@ describe Domoticz::Device do
       "YOffset" => "592",
       "idx" => "47"
     })
+  end
+
+  describe '#timers' do
+    context 'when the device has timers' do
+      it 'returns associated timers' do
+        stub_server_with_fixture(params: "type=devices&filter=all&used=true", fixture: "switches.json")
+        stub_server_with_fixture(params: "type=timers&idx=1", fixture: "timers.json")
+
+        switch = Domoticz::Device.find_by_id(1)
+        expect(switch.timers).to be_kind_of(Array)
+        switch.timers.each { |t| expect(t).to be_a(Domoticz::Timer) }
+      end
+    end
+
+    context 'when the device has no timers' do
+      it 'returns nil' do
+        stub_server_with_fixture(params: "type=devices&filter=all&used=true", fixture: "switches.json")
+        switch = Domoticz::Device.find_by_id(2)
+        expect(switch.timers).to be_nil
+      end
+    end
   end
 end

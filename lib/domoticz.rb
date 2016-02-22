@@ -1,6 +1,8 @@
 require "domoticz/version"
 require "domoticz/configuration"
 require "domoticz/device"
+require "domoticz/timer"
+require "domoticz/sunrise_sunset"
 require "json"
 
 module Domoticz

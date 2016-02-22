@@ -19,6 +19,12 @@ module Domoticz
       Domoticz.perform_api_request("type=command&param=switchlight&idx=#{idx}&switchcmd=Toggle")
     end
 
+    def timers
+      if @data['Timers'] || @data['Timers'] == 'true'
+        Domoticz.perform_api_request("type=timers&idx=#{idx}")['result'].map{|t| Timer.new_from_json(t)}
+      end
+    end
+
     def temperature
       temp
     end
@@ -39,7 +45,7 @@ module Domoticz
     end
 
     def self.find_by_id(id)
-      all.find { |d| d.idx == id.to_s }
+      all.find { |d| d.idx == id }
     end
 
     def self.all
@@ -48,10 +54,16 @@ module Domoticz
       end
     end
 
+    def self.device(id)
+      Domoticz.perform_api_request("type=devices&rid=#{id}")['result'].map do |json|
+        Device.new_from_json(json)
+      end.first
+    end
+
     def self.new_from_json(json)
       device = self.new
       device.data = json
-      device.idx = json["idx"]
+      device.idx = json["idx"].to_i
       device
     end
   end
