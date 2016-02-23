@@ -130,10 +130,9 @@ describe Domoticz::Timer do
         expect(subject.next_date(now)).to eq(
           DateTime.new(2016, 02, 27, 8, 45)
         )
+      end
+      it 'the next date should be greater than current date' do
         expect(subject.next_date(DateTime.new(2016, 02, 27, 8, 45))).to eq(
-          DateTime.new(2016, 02, 27, 8, 45)
-        )
-        expect(subject.next_date(DateTime.new(2016, 02, 27, 8, 46))).to eq(
           DateTime.new(2016, 02, 27, 8, 45).next_day(7)
         )
       end
@@ -153,12 +152,12 @@ describe Domoticz::Timer do
       context 'when its related to sunrise' do
         before(:each) { subject.data = {'Type' => 0} }
         it 'returns the sunrise on the current day when before the sunrise' do
-          expect(subject.next_date(DateTime.new(2016, 02, 22, 8, 0))).to eq(
+          expect(subject.next_date(DateTime.new(2016, 02, 22, 7, 59))).to eq(
             DateTime.new(2016, 02, 22, 8, 0)
           )
         end
         it 'returns the sunrize the next day when after the sunrise' do
-          expect(subject.next_date(DateTime.new(2016, 02, 22, 8, 1))).to eq(
+          expect(subject.next_date(DateTime.new(2016, 02, 22, 8, 0))).to eq(
             DateTime.new(2016, 02, 23, 8, 0)
           )
         end
@@ -166,12 +165,12 @@ describe Domoticz::Timer do
       context 'when its related to sunset' do
         before(:each) { subject.data = {'Type' => 4} }
         it 'returns the sunset on the current day when before the sunset' do
-          expect(subject.next_date(DateTime.new(2016, 02, 22, 20, 0))).to eq(
+          expect(subject.next_date(DateTime.new(2016, 02, 22, 19, 59))).to eq(
             DateTime.new(2016, 02, 22, 20, 0)
           )
         end
         it 'returns the sunset on the next day when after the sunset' do
-          expect(subject.next_date(DateTime.new(2016, 02, 22, 20, 1))).to eq(
+          expect(subject.next_date(DateTime.new(2016, 02, 22, 20, 0))).to eq(
             DateTime.new(2016, 02, 23, 20, 0)
           )
         end

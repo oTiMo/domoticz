@@ -62,23 +62,23 @@ module Domoticz
     def next_date(date = DateTime.now)
       case type
       when BEFORE_SUNRISE, AFTER_SUNRISE
-        if ([date.hour, date.min] <=> (t=Domoticz.sunrise_sunset.sunrise_array)) <= 0
+        if ([date.hour, date.min] <=> (t=Domoticz.sunrise_sunset.sunrise_array)) < 0
           DateTime.new(date.year, date.month, date.day, *t)
         else
           DateTime.new(date.year, date.month, date.day, *t).next_day
         end
       when BEFORE_SUNSET, AFTER_SUNSET
-        if ([date.hour, date.min] <=> (t=Domoticz.sunrise_sunset.sunset_array)) <= 0
+        if ([date.hour, date.min] <=> (t=Domoticz.sunrise_sunset.sunset_array)) < 0
           DateTime.new(date.year, date.month, date.day, *t)
         else
           DateTime.new(date.year, date.month, date.day, *t).next_day
         end
       when ON_TIME
         c = DateTime.new(date.year, date.month, date.day, *time_array)
-        c.upto(c.next_day(7)).find{ |d| date <= d && self.apply_to?(d) }
+        c.upto(c.next_day(7)).find{ |d| date < d && self.apply_to?(d) }
       when FIXED_DATE
         c = DateTime.new(*(date_array+time_array))
-        c if c >= date
+        c if c > date
       end
     end
 
