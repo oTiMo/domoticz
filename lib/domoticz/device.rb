@@ -25,6 +25,16 @@ module Domoticz
       end
     end
 
+    TimerDate = Struct.new(:timer, :date)
+    def next_timers(date = DateTime.now)
+      sorted = timers
+        .map{|t| TimerDate.new(t, t.next_date(date))}
+        .select(&:date) # remove event without next date
+        .sort_by(&:date)
+      first = sorted[0]
+      sorted.take_while{|t| t.date == first.date}.map(&:timer).to_a
+    end
+
     def temperature
       temp
     end

@@ -82,11 +82,5 @@ module Domoticz
       end
     end
 
-    def self.next_event(timers, date)
-      timers
-        .map{|t| [t, t.next_date(date)]}
-        .select(&:last) # remove event without next date
-        .min_by(&:last)
-    end
   end
 end
