@@ -126,40 +126,47 @@ describe Domoticz::Device do
     end
   end
 
-  describe '#next_timers' do
-    def create_timer(idx, date)
-      Domoticz::Timer.new.tap do |t| 
-        t.data = {
-          'Idx' => idx,
-          'Type' => Domoticz::Timer::FIXED_DATE, 
-          'Date' => "#{date.year}-#{date.month}-#{date.day}",
-          'Time' => "#{date.hour}:#{date.min}",
-        }
-      end
+  def create_timer(idx, date)
+    Domoticz::Timer.new.tap do |t| 
+      t.data = {
+        'Idx' => idx,
+        'Type' => Domoticz::Timer::FIXED_DATE, 
+        'Date' => "#{date.year}-#{date.month}-#{date.day}",
+        'Time' => "#{date.hour}:#{date.min}",
+      }
     end
-    let(:timer_dates) {[
-      DateTime.new(2016, 2, 23, 8, 0),
-      DateTime.new(2016, 2, 23, 9, 0),
-      DateTime.new(2016, 2, 23, 8, 0),
-      DateTime.new(2016, 2, 23, 7, 0),
-      DateTime.new(2016, 2, 23, 10, 0),
-    ]}
-    let(:timers) { timer_dates.each_with_index.map{|d, i| create_timer(i, d)} }
+  end
+  let(:timer_dates) {[
+    DateTime.new(2016, 2, 23, 8, 0),
+    DateTime.new(2016, 2, 23, 9, 0),
+    DateTime.new(2016, 2, 23, 8, 0),
+    DateTime.new(2016, 2, 23, 7, 0),
+    DateTime.new(2016, 2, 23, 10, 0),
+  ]}
+  let(:timers) { timer_dates.each_with_index.map{|d, i| create_timer(i, d)} }
+
+  describe '#next_timers' do
+    it 'returns TimerDate objects' do
+      allow(subject).to receive(:timers).and_return(timers)
+      expect(
+        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30)).all?{|e| e.is_a? Domoticz::Device::TimerDate}
+      ).to be true
+    end
     it 'returns the list of the next timers' do
       allow(subject).to receive(:timers).and_return(timers)
       expect(
-        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30))
+        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30)).map(&:timer)
       ).to eq(
         [timers[0], timers[2]]
       )
 
       # can be called twice
       expect(
-        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30))
+        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30)).map(&:timer)
       ).to eq(
         [timers[0], timers[2]]
       )
-      
+
 
       # list can be empty
       expect(
@@ -167,5 +174,31 @@ describe Domoticz::Device do
       ).to be_empty
     end
   end
-  
+  describe '#enum_next_timers' do
+    let(:now) { DateTime.new(2016, 2, 23, 0, 0) }
+    it 'returns an enumerator on the next timers' do
+      allow(subject).to receive(:timers).and_return(timers)
+      expect( subject.enum_next_timers(now)).to be_a Enumerator
+
+      expect( subject.enum_next_timers(now).first(3).map(&:date) ).to eq(
+        timer_dates.sort.first(3)
+      )
+    end
+    it 'supports infinite loop: case where there is a recurrent timer' do
+      allow(subject).to receive(:timers).and_return([
+        Domoticz::Timer.new.tap do |t|
+          t.data = {
+            'Type' => Domoticz::Timer::ON_TIME,
+            'Time' => '12:00',
+            'Days' => Domoticz::Timer::EVERYDAY,
+          }
+        end
+      ])
+      first = DateTime.new(now.year, now.month, now.day, 12, 0)
+      expect(
+        subject.enum_next_timers(now).map(&:date).first(3)
+      ).to eq(first.upto(first.next_day(2)).to_a)
+    end
+  end
+
 end

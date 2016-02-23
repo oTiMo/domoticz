@@ -32,7 +32,17 @@ module Domoticz
         .select(&:date) # remove event without next date
         .sort_by(&:date)
       first = sorted[0]
-      sorted.take_while{|t| t.date == first.date}.map(&:timer).to_a
+      sorted.take_while{|t| t.date == first.date}.to_a
+    end
+
+    def enum_next_timers(date = DateTime.now)
+      return enum_for(:enum_next_timers, date).lazy unless block_given?
+      while true
+        timers = next_timers(date)
+        break if timers.empty?
+        timers.each { |t| yield t }
+        date = timers.first.date
+      end
     end
 
     def temperature
