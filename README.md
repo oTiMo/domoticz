@@ -19,13 +19,13 @@ end
 ### List all devices
 
 ```ruby
-devices = Domoticz::Switch.all
+devices = Domoticz::Device.all
 # => [#<Domoticz::Switch:0x007fc51e203420 @name="Energy", @dimmer=nil, @idx="6", @type="P1 Smart Meter", @subtype="Energy">, #<Domoticz::Switch:0x007fc51e203308 @name="Gas", @dimmer=nil, @idx="7", @type="P1 Smart Meter", @subtype="Gas">, #<Domoticz::Switch:0x007fc51e2031c8 @name="Test switch", @dimmer=nil, @idx="8", @type="Lighting 1", @subtype="X10">]
 ```
 
 ### Interact with a switch
 ```ruby
-switch = Domoticz::Devices.all.first
+switch = Domoticz::Device.all.first
 switch.on! # turn it on
 switch.off! # turn it off
 switch.toggle! # toggle switch
