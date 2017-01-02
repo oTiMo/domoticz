@@ -38,8 +38,8 @@ module Domoticz
       end
     end
 
-    def self.find_by_id(id)
-      all.find { |d| d.idx == id.to_s }
+    def self.find_by_idx(idx)
+      all.find { |d| d.idx == idx.to_s }
     end
 
     def self.all

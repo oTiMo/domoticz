@@ -17,7 +17,7 @@ describe Domoticz::Device do
   it "gets a specific device" do
     stub_server_with_fixture(params: "type=devices&filter=all&used=true", fixture: "switches.json")
 
-    device = Domoticz::Device.find_by_id(1)
+    device = Domoticz::Device.find_by_idx(1)
     expect(device).to be_a Domoticz::Device
 
     expect(device.name).to eq "Switch 1"
@@ -57,7 +57,7 @@ describe Domoticz::Device do
 
     Timecop.freeze(2015, 12, 13, 14, 2, 51)
 
-    device = Domoticz::Device.find_by_id(47)
+    device = Domoticz::Device.find_by_idx(47)
     expect(device.seconds_since_update).to eq 4
   end
 
