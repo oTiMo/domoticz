@@ -201,4 +201,62 @@ describe Domoticz::Device do
     end
   end
 
+  describe '#lightlog' do
+    subject { Domoticz::Device.new.tap{|s| s.idx = '1'} }
+    it 'returns the lightlog' do
+      stub_server_with_fixture(params: "type=lightlog&idx=1", fixture: "lightlog.json")
+
+      lightlog = subject.lightlog
+      expect(lightlog.size).to eq(378)
+      expect(lightlog.first.date).to eq('2017-01-02 08:31:00')
+      expect(lightlog.first.data).to eq('On')
+      expect(lightlog.first.status).to eq('On')
+      expect(lightlog.first.level).to eq(0)
+      expect(lightlog.first.max_dim_level).to eq(100)
+    end
+  end
+
+  describe '#templog' do
+    subject { Domoticz::Device.new.tap{|s| s.idx = '1'} }
+    it 'returns the temperature history for days' do
+      stub_server_with_fixture(params: "type=graph&sensor=temp&idx=1&range=day", fixture: "templog_day.json")
+
+      templog = subject.templog(:day)
+      expect(templog.size).to eq(2017)
+      expect(templog.first).to be_a(Domoticz::Device::TempRecord)
+      expect(templog.first.date).to eq("2016-12-26 21:25")
+      expect(templog.first.temperature).to eq(20.6)
+      expect(templog.first.humidity).to eq(42)
+      expect(templog.first.temp_min).to be_nil
+      expect(templog.first.temp_max).to be_nil
+      end
+    
+    it 'returns the temperature history for months' do
+      stub_server_with_fixture(params: "type=graph&sensor=temp&idx=1&range=month", fixture: "templog_month.json")
+
+      templog = subject.templog(:month)
+      expect(templog.size).to eq(32)
+      expect(templog.first).to be_a(Domoticz::Device::TempRecord)
+      expect(templog.first.date).to eq("2016-12-02")
+      expect(templog.first.temperature).to eq(18.95)
+      expect(templog.first.humidity).to eq(42)
+      expect(templog.first.temp_min).to eq(16.7)
+      expect(templog.first.temp_max).to eq(20.6)
+    end
+    
+    it 'returns the temperature history for years' do
+      stub_server_with_fixture(params: "type=graph&sensor=temp&idx=1&range=year", fixture: "templog_year.json")
+
+      templog = subject.templog(:year)
+      expect(templog.size).to eq(358)
+      expect(templog.first).to be_a(Domoticz::Device::TempRecord)
+      expect(templog.first.date).to eq("2016-01-07")
+      expect(templog.first.temperature).to eq(17.77)
+      expect(templog.first.humidity).to eq(46)
+      expect(templog.first.temp_min).to eq(17.3)
+      expect(templog.first.temp_max).to eq(20.0)
+    end
+    
+  end
+
 end
