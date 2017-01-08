@@ -66,7 +66,7 @@ module Domoticz
     def next_schedule
       result = Domoticz.perform_api_request("type=schedules")['result']
       result
-        .select{|t| Integer(t['RowID']) == idx}
+        .select{|t| rowid = Integer(t['RowID']||t['DeviceRowID']) == idx}
         .map{|t| Schedule.new(Time.strptime(t['ScheduleDate'], '%Y-%m-%d %H:%M:%S'), t)}
         .min_by(&:date) if result
     end
