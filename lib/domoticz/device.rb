@@ -62,6 +62,15 @@ module Domoticz
       end
     end
 
+    Schedule = Struct.new(:date, :data)
+    def next_schedule
+      result = Domoticz.perform_api_request("type=schedules")['result']
+      result
+        .select{|t| Integer(t['RowID']) == idx}
+        .map{|t| Schedule.new(Time.strptime(t['ScheduleDate'], '%Y-%m-%d %H:%M:%S'), t)}
+        .min_by(&:date) if result
+    end
+
     def temperature
       temp
     end
