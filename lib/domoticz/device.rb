@@ -15,6 +15,10 @@ module Domoticz
       Domoticz.perform_api_request("type=command&param=switchlight&idx=#{idx}&switchcmd=Toggle")
     end
 
+    def set_value(v)
+      Domoticz.perform_api_request("type=command&param=udevice&idx=#{idx}&nvalue=0&svalue=#{v}")
+    end
+
     def timers
       if @data['Timers'] || @data['Timers'] == 'true'
         Domoticz.perform_api_request("type=timers&idx=#{idx}")['result'].map{|t| Timer.new_from_json(t)}
@@ -115,6 +119,16 @@ module Domoticz
       device.data = json
       device.idx = json["idx"].to_i
       device
+    end
+
+    def self.create_sensor(name)
+      dh = dummy_hardware['idx']
+      idx = Domoticz.perform_api_request("type=createvirtualsensor&idx=#{dh}&sensorname=#{name}&sensortype=1004&sensoroptions=1;unit")['idx']
+      device(idx)
+    end
+
+    def self.dummy_hardware
+      Domoticz.perform_api_request('type=hardware')['result'].find{|h| h['Name'] == 'Dummy'}
     end
   end
 end
