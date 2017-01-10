@@ -1,6 +1,7 @@
 require 'cgi'
 module Domoticz
   def self.log(message)
-    perform_api_request "type=command&param=addlogmessage&message=#{CGI.escape(message)}"
+    m = "#{Domoticz.configuration.client_name}: #{message}".b
+    perform_api_request "type=command&param=addlogmessage&message=#{CGI.escape(m)}"
   end
 end
