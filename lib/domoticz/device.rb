@@ -75,7 +75,7 @@ module Domoticz
       date = Time.now
       result = Domoticz.perform_api_request("type=schedules")['result']
       result
-        .select{|t| rowid = Integer(t['RowID']||t['DeviceRowID']) == idx}
+        .select{|t| Integer(t['RowID']||t['DeviceRowID']) == idx && t['Active'] == 'true' }
         .map{|t| Schedule.new(Time.strptime(t['ScheduleDate'], '%Y-%m-%d %H:%M:%S'), t)}
         .select{ |s| s.date > date }
         .min_by(&:date) if result
