@@ -1,6 +1,8 @@
-require "domoticz"
-require "support/spec_helpers"
-require "timecop"
+# frozen_string_literal: true
+
+require 'domoticz'
+require 'support/spec_helpers'
+require 'timecop'
 
 RSpec.configure do |config|
   config.before(:each) do

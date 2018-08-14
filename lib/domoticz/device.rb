@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Domoticz
   class Device
     attr_accessor :idx
@@ -8,15 +10,15 @@ module Domoticz
     end
 
     def on!
-      Domoticz.perform_api_request("type=command&param=switchlight&idx=#{idx}&switchcmd=On")
+      Domoticz.perform_api_request(switch_cmd_request(:on))
     end
 
     def off!
-      Domoticz.perform_api_request("type=command&param=switchlight&idx=#{idx}&switchcmd=Off")
+      Domoticz.perform_api_request(switch_cmd_request(:off))
     end
 
     def toggle!
-      Domoticz.perform_api_request("type=command&param=switchlight&idx=#{idx}&switchcmd=Toggle")
+      Domoticz.perform_api_request(switch_cmd_request(:toggle))
     end
 
     def temperature
@@ -28,11 +30,20 @@ module Domoticz
     end
 
     def method_missing(method_sym, *arguments, &block)
-      hash = Hash[@data.map { |k, v| [k.downcase, v] }]
       key = method_sym.to_s.downcase
 
-      if hash.has_key?(key)
-        hash[key]
+      if data_hash.key?(key)
+        data_hash[key]
+      else
+        super
+      end
+    end
+
+    def respond_to_missing?(method_sym, include_private)
+      key = method_sym.to_s.downcase
+
+      if data_hash.key?(key)
+        data_hash[key]
       else
         super
       end
@@ -43,16 +54,34 @@ module Domoticz
     end
 
     def self.all
-      Domoticz.perform_api_request("type=devices&filter=all&used=true")["result"].map do |json|
+      Domoticz.perform_api_request(device_list_request)['result'].map do |json|
         Device.new_from_json(json)
       end
     end
 
     def self.new_from_json(json)
-      device = self.new
+      device = new
       device.data = json
-      device.idx = json["idx"]
+      device.idx = json['idx']
       device
+    end
+
+    private
+
+    def data_hash
+      Hash[@data.map { |k, v| [k.downcase, v] }]
+    end
+
+    def switch_cmd_request(cmd)
+      "type=command&param=switchlight&idx=#{idx}&switchcmd=#{cmd.capitalize}"
+    end
+
+    class << self
+      private
+
+      def device_list_request
+        'type=devices&filter=all&used=true'
+      end
     end
   end
 end
