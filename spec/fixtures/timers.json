@@ -1,0 +1,78 @@
+{
+   "result" : [
+      {
+         "Active" : "true",
+         "Cmd" : 1,
+         "Date" : "",
+         "Days" : 27,
+         "Hue" : 0,
+         "Level" : 100,
+         "Randomness" : false,
+         "Time" : "04:30",
+         "Type" : 2,
+         "idx" : "1"
+      },
+      {
+         "Active" : "true",
+         "Cmd" : 0,
+         "Date" : "",
+         "Days" : 27,
+         "Hue" : 0,
+         "Level" : 100,
+         "Randomness" : false,
+         "Time" : "07:40",
+         "Type" : 2,
+         "idx" : "2"
+      },
+      {
+         "Active" : "true",
+         "Cmd" : 1,
+         "Date" : "",
+         "Days" : 27,
+         "Hue" : 0,
+         "Level" : 100,
+         "Randomness" : false,
+         "Time" : "16:00",
+         "Type" : 2,
+         "idx" : "3"
+      },
+      {
+         "Active" : "true",
+         "Cmd" : 0,
+         "Date" : "",
+         "Days" : 27,
+         "Hue" : 0,
+         "Level" : 100,
+         "Randomness" : false,
+         "Time" : "21:00",
+         "Type" : 2,
+         "idx" : "4"
+      },
+      {
+         "Active" : "true",
+         "Cmd" : 1,
+         "Date" : "",
+         "Days" : 100,
+         "Hue" : 0,
+         "Level" : 100,
+         "Randomness" : false,
+         "Time" : "05:00",
+         "Type" : 2,
+         "idx" : "5"
+      },
+      {
+         "Active" : "true",
+         "Cmd" : 0,
+         "Date" : "",
+         "Days" : 100,
+         "Hue" : 0,
+         "Level" : 100,
+         "Randomness" : false,
+         "Time" : "21:20",
+         "Type" : 2,
+         "idx" : "6"
+      }
+   ],
+   "status" : "OK",
+   "title" : "Timers"
+}

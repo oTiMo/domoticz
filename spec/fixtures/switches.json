@@ -5,6 +5,7 @@
       "Name": "Switch 1",
       "SubType": "X10",
       "Type": "Lighting 1",
+      "Timers": "true",
       "idx": "1"
     },
     {

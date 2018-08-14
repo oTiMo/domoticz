@@ -1,0 +1,2656 @@
+{
+   "HaveDimmer" : true,
+   "HaveGroupCmd" : false,
+   "HaveSelector" : false,
+   "result" : [
+      {
+         "Data" : "On",
+         "Date" : "2017-01-02 08:31:00",
+         "Level" : 0,
+         "MaxDimLevel" : 100,
+         "Status" : "On",
+         "idx" : "842376"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-02 07:41:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "842322"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-02 03:01:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "841795"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-02 02:24:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "841718"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-02 01:56:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "841660"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-02 01:16:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "841579"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-02 00:48:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "841521"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "841183"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 19:41:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "841100"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 19:23:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "841097"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 15:08:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "840839"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 14:39:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "840755"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 14:04:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "840716"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 13:43:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "840693"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 11:36:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "840543"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 11:26:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "840516"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 11:05:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "840477"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 10:46:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "840454"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 10:24:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "840430"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 10:03:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "840404"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 02:38:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "839491"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 02:20:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "839452"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 02:06:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "839423"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 01:46:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "839350"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 01:29:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "839314"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2017-01-01 01:05:07",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "839265"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2017-01-01 00:49:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "839216"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 23:39:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "839027"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 23:18:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "838984"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 21:30:06",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "838820"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 21:16:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "838817"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 20:46:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "838812"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 20:31:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "838809"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 19:54:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "838678"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 18:08:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "838539"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 17:58:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "838531"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 15:59:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "838415"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 15:46:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "838411"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 15:29:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "838405"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 15:15:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "838389"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 03:24:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "837383"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 03:04:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "837341"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 02:47:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "837306"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 02:24:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "837257"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 02:06:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "837220"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 01:41:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "837167"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 01:23:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "837129"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-31 00:59:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "837079"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-31 00:40:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "837040"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-30 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "836789"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-30 08:49:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "835383"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-30 07:41:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "835312"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 23:24:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "834342"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "834030"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 15:01:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833389"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 14:42:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833387"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 14:23:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833385"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 14:00:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833383"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 13:36:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833377"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 13:16:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833376"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 12:53:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833373"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 12:33:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833370"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 12:05:03",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833368"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 11:45:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833367"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 11:17:59",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833364"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 10:59:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833363"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 10:31:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833355"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 10:11:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833334"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 09:42:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833318"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 09:23:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833317"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 08:55:03",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833314"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 08:38:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833313"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 08:13:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833311"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 07:55:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833306"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 07:28:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833303"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 07:11:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833293"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 06:47:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833281"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 06:29:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833278"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 06:04:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833276"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 05:47:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833274"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 05:22:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833272"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 05:03:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833269"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 04:37:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833268"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 04:19:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833266"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 03:55:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833264"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 03:38:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833261"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 03:17:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833259"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 02:59:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833257"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 02:36:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833254"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 02:18:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833253"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 01:55:03",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833246"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 01:37:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833229"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 01:13:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833202"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 00:54:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833181"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-29 00:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833157"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-29 00:13:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833137"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 23:50:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833111"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 23:32:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833090"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 23:12:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833068"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 22:53:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833047"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 22:31:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "833023"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 22:13:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "833003"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 21:53:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832979"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 21:34:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832958"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 21:12:02",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832934"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 20:53:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832914"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 20:33:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832888"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 20:14:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832867"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 19:57:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832847"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 19:37:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832826"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 19:18:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832804"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 18:58:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832783"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 18:39:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832758"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 18:18:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832713"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 17:59:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832671"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 17:38:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832628"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 17:20:06",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832590"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 16:59:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832545"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 16:42:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832509"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 16:18:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832460"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 16:00:06",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832422"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 15:22:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832344"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 15:09:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832315"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 14:22:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832220"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 14:06:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832203"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 13:43:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832178"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 13:26:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832158"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 13:01:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832131"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 12:43:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832112"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 12:18:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832084"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 11:59:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832064"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 11:36:02",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "832038"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 11:18:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "832019"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 10:55:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831994"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 10:36:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831972"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 10:11:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831946"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 09:52:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831924"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 09:27:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831897"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 09:09:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831874"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 08:48:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831852"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 08:31:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831832"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 08:09:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831808"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 07:51:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831788"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 07:30:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831764"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 07:13:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831746"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 06:51:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831722"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 06:34:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831702"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 06:12:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831679"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 05:56:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831661"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 05:33:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831635"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 05:17:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831617"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 04:53:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831584"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 04:36:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831566"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 04:11:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831519"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 03:53:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831480"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 03:28:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831424"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 03:11:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831389"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 02:45:04",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831334"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 02:28:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831299"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 02:00:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831240"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 01:43:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831204"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 01:16:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831149"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 01:00:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831115"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-28 00:32:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "831056"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-28 00:16:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "831022"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 23:50:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830968"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 23:35:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830936"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 23:08:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830880"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 22:52:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830845"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 22:22:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830782"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 22:06:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830749"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 21:36:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830680"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 21:20:06",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830646"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 20:47:02",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830579"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 20:32:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830546"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 19:57:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830474"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 19:43:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830443"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 19:04:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830364"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 18:50:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830334"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 18:06:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "830243"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 17:52:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "830210"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 13:28:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "829583"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 12:52:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "829510"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 12:37:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "829477"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 08:45:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "828874"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 07:41:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "828794"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 03:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "828326"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 03:29:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "828318"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 03:14:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "828286"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-27 02:31:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "828198"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-27 02:17:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "828168"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 21:56:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827788"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 21:32:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827787"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 21:17:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827784"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 20:54:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827782"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 20:37:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827779"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 20:09:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827755"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 19:50:08",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827733"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 19:23:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827688"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 19:08:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827671"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 18:12:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827630"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 17:55:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827601"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 17:25:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827540"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 17:10:06",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827504"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 15:41:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827325"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 15:26:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827292"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 14:40:07",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827182"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 14:23:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "827116"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 13:57:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "827031"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 13:39:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "826993"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 13:20:06",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "826954"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 13:05:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "826892"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 08:51:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "826229"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 07:41:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "826141"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 03:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "825674"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 03:23:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "825655"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 03:10:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "825626"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-26 02:28:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "825541"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-26 02:12:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "825507"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 22:01:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "825008"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 21:44:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824990"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 21:28:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824955"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 21:08:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824937"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 20:47:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824919"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 20:30:59",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824915"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 20:03:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824913"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 19:50:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824880"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 19:30:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824849"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 19:14:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824799"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 18:47:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824696"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 18:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824682"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 18:07:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824653"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 16:34:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824607"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 16:21:02",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824590"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 15:57:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824465"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 15:31:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824463"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 15:16:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824462"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 14:53:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824444"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 14:38:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824426"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 13:42:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824424"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 13:28:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824421"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 12:45:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824296"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 12:34:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824291"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 12:08:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824228"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 11:50:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824211"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 11:25:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824208"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 11:08:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824160"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 10:40:06",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824128"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 10:14:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824081"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 09:50:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824062"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 09:31:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824059"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 09:09:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824053"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 08:53:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "824050"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 08:26:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "824024"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 08:05:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "823982"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 07:56:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "823931"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-25 03:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "823397"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-25 00:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822969"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 23:39:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822879"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 23:16:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822802"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 22:35:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822718"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 22:01:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822602"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 21:53:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822575"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 21:29:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822556"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 21:12:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822553"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 20:53:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822536"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 20:36:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822512"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 20:15:07",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822419"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 19:52:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822388"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 19:25:06",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822383"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 19:01:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822357"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 18:43:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "822262"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 17:56:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "822051"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 17:36:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "821959"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 16:34:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "821926"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 16:09:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "821892"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 15:53:59",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "821891"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 15:18:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "821858"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 14:18:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "821729"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 13:58:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "821726"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 03:29:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "820840"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 02:43:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "820793"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 02:24:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "820772"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-24 01:29:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "820711"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-24 01:11:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "820691"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-23 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "820370"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-23 21:23:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "820327"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-23 21:11:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "820312"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-23 15:13:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "819636"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-23 14:34:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "819552"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-23 08:39:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "818716"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-23 07:41:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "818535"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-23 03:09:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "818215"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-23 02:26:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "818168"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-23 02:04:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "818144"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-23 01:20:04",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "818098"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-23 01:01:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "818078"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "817893"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 21:06:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "817885"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 20:47:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "817881"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 15:01:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "817109"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 14:30:04",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "817043"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 14:13:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "817008"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 13:24:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "816908"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 13:04:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "816865"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 12:17:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "816770"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 11:58:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "816730"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 11:14:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "816639"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 10:52:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "816593"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 10:11:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "816507"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 09:49:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "816460"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 07:41:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "816173"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 03:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "815666"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 03:28:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "815656"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 03:07:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "815612"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 02:24:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "815524"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 02:03:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "815481"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-22 01:12:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "815376"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-22 00:52:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "815335"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-21 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "815119"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-21 20:43:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "815036"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-21 20:27:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "815018"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-21 03:25:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "814059"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-21 02:53:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "814025"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-21 02:27:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "813997"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-21 01:52:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "813959"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-21 01:26:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "813931"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-21 00:47:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "813887"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-21 00:23:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "813861"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 22:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "813708"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 21:39:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "813689"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 21:24:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "813687"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 15:01:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "813202"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 14:10:06",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "813098"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 13:47:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "813050"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 13:06:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "812965"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 12:44:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "812920"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 12:07:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "812841"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 11:46:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "812797"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 11:09:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "812720"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 10:48:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "812676"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 10:06:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "812590"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 09:44:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "812545"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 07:41:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "812263"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 03:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811756"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 03:17:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811724"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 02:52:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811673"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 02:14:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811594"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 01:52:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811549"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-20 01:09:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811480"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-20 00:48:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811457"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 22:01:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811284"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 21:48:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811267"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 21:31:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811233"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 20:58:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811228"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 20:32:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811226"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 20:05:05",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "811220"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 19:35:05",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "811200"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 07:54:07",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "810134"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 07:54:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "810131"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 07:41:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "810102"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 03:31:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "809806"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 03:01:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "809773"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 02:37:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "809747"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 01:58:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "809698"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 01:34:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "809648"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-19 00:52:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "809562"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-19 00:30:04",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "809515"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-18 22:01:00",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "809295"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-18 15:54:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "809271"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-18 15:37:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "809268"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-18 15:10:03",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "809265"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-18 14:33:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "809259"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-18 03:14:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "808785"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-18 02:34:01",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "808743"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-18 02:14:01",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "808720"
+      },
+      {
+         "Data" : "Off",
+         "Date" : "2016-12-18 01:30:04",
+         "Level" : 0,
+         "Status" : "Off",
+         "idx" : "808675"
+      },
+      {
+         "Data" : "On",
+         "Date" : "2016-12-18 01:10:00",
+         "Level" : 0,
+         "Status" : "On",
+         "idx" : "808652"
+      }
+   ],
+   "status" : "OK",
+   "title" : "LightLog"
+}

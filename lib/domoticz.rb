@@ -4,6 +4,9 @@ require 'domoticz/version'
 require 'domoticz/configuration'
 require 'domoticz/device'
 require 'json'
+require 'domoticz/timer'
+require 'domoticz/sunrise_sunset'
+require 'domoticz/log'
 require 'net/http'
 
 module Domoticz
