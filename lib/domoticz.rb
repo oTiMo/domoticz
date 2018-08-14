@@ -2,6 +2,7 @@ require "domoticz/version"
 require "domoticz/configuration"
 require "domoticz/device"
 require "json"
+require "net/http"
 
 module Domoticz
   def self.configuration
