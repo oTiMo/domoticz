@@ -13,14 +13,16 @@ describe Domoticz do
       end
     end
     it 'send a log message to the server' do
+      params = 'type=command&param=addlogmessage&message=test_app%3A+message'
       expect(Domoticz).to receive(:perform_api_request)
-        .with('type=command&param=addlogmessage&message=test_app%3A+message')
+        .with(params)
       Domoticz.log 'message'
     end
     it 'can send non ascii message' do
       message = 'Il était une fois'
+      params = 'type=command&param=addlogmessage&message=test_app%3A+Il+%C3%A9tait+une+fois'
       expect(Domoticz).to receive(:perform_api_request)
-        .with('type=command&param=addlogmessage&message=test_app%3A+Il+%C3%A9tait+une+fois')
+        .with(params)
       Domoticz.log message
     end
   end

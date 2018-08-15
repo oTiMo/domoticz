@@ -6,7 +6,7 @@ describe 'Domoticz::Device.all' do
   it 'gets all available devices' do
     stub_server_with_fixture(
       params: 'type=devices&filter=all&used=true',
-      fixture: 'switches.json'
+      fixture: 'switches.json',
     )
 
     devices = Domoticz::Device.all
@@ -20,14 +20,14 @@ describe 'Domoticz::Device.all' do
   end
 end
 
-describe 'Domoticz::Device.find_by_idx' do
+describe 'Domoticz::Device.find_by' do
   it 'gets a specific device' do
     stub_server_with_fixture(
       params: 'type=devices&filter=all&used=true',
-      fixture: 'switches.json'
+      fixture: 'switches.json',
     )
 
-    device = Domoticz::Device.find_by_idx(1)
+    device = Domoticz::Device.find_by(idx: 1)
     expect(device).to be_a Domoticz::Device
 
     expect(device.name).to eq 'Switch 1'
@@ -45,7 +45,7 @@ describe 'Domoticz::Device switch commands' do
     stub_server_with_fixture(
       params: 'type=command&param=switchlight&idx=8&switchcmd=On',
       fixture: 'switch_turn_on.json',
-      required: true
+      required: true,
     )
 
     switch.on!
@@ -55,7 +55,7 @@ describe 'Domoticz::Device switch commands' do
     stub_server_with_fixture(
       params: 'type=command&param=switchlight&idx=8&switchcmd=Off',
       fixture: 'switch_turn_off.json',
-      required: true
+      required: true,
     )
 
     switch.off!
@@ -65,7 +65,7 @@ describe 'Domoticz::Device switch commands' do
     stub_server_with_fixture(
       params: 'type=command&param=switchlight&idx=8&switchcmd=Toggle',
       fixture: 'switch_toggle.json',
-      required: true
+      required: true,
     )
 
     switch.toggle!
@@ -77,12 +77,12 @@ describe '#seconds_since_update' do
     # "LastUpdate": "2015-12-13 14:02:47",
     stub_server_with_fixture(
       params: 'type=devices&filter=all&used=true',
-      fixture: 'temperature_device.json'
+      fixture: 'temperature_device.json',
     )
 
     Timecop.freeze(2015, 12, 13, 14, 2, 51)
 
-    device = Domoticz::Device.find_by_idx(47)
+    device = Domoticz::Device.find_by(idx: 47)
     expect(device.seconds_since_update).to eq 4
   end
 end
@@ -91,7 +91,7 @@ describe '#data' do
   it 'gets the raw json data' do
     stub_server_with_fixture(
       params: 'type=devices&filter=all&used=true',
-      fixture: 'temperature_device.json'
+      fixture: 'temperature_device.json',
     )
 
     switches = Domoticz::Device.all
@@ -131,17 +131,23 @@ describe '#data' do
       'Used' => 1,
       'XOffset' => '185',
       'YOffset' => '592',
-      'idx' => '47'
+      'idx' => '47',
     )
   end
 
   describe '#timers' do
     context 'when the device has timers' do
       it 'returns associated timers' do
-        stub_server_with_fixture(params: 'type=devices&filter=all&used=true', fixture: 'switches.json')
-        stub_server_with_fixture(params: 'type=timers&idx=1', fixture: 'timers.json')
+        stub_server_with_fixture(
+          params: 'type=devices&filter=all&used=true',
+          fixture: 'switches.json',
+        )
+        stub_server_with_fixture(
+          params: 'type=timers&idx=1',
+          fixture: 'timers.json',
+        )
 
-        switch = Domoticz::Device.find_by_idx(1)
+        switch = Domoticz::Device.find_by(idx: 1)
         expect(switch.timers).to be_kind_of(Array)
         switch.timers.each { |t| expect(t).to be_a(Domoticz::Timer) }
       end
@@ -149,8 +155,11 @@ describe '#data' do
 
     context 'when the device has no timers' do
       it 'returns nil' do
-        stub_server_with_fixture(params: 'type=devices&filter=all&used=true', fixture: 'switches.json')
-        switch = Domoticz::Device.find_by_idx(2)
+        stub_server_with_fixture(
+          params: 'type=devices&filter=all&used=true',
+          fixture: 'switches.json',
+        )
+        switch = Domoticz::Device.find_by(idx: 2)
         expect(switch.timers).to be_nil
       end
     end
@@ -162,17 +171,17 @@ describe '#data' do
         'Idx' => idx,
         'Type' => Domoticz::Timer::FIXED_DATE,
         'Date' => "#{date.year}-#{date.month}-#{date.day}",
-        'Time' => "#{date.hour}:#{date.min}"
+        'Time' => "#{date.hour}:#{date.min}",
       }
     end
   end
   let(:timer_dates) do
     [
-      DateTime.new(2016, 2, 23, 8, 0),
-      DateTime.new(2016, 2, 23, 9, 0),
-      DateTime.new(2016, 2, 23, 8, 0),
-      DateTime.new(2016, 2, 23, 7, 0),
-      DateTime.new(2016, 2, 23, 10, 0)
+      Time.local(2016, 2, 23, 8, 0),
+      Time.local(2016, 2, 23, 9, 0),
+      Time.local(2016, 2, 23, 8, 0),
+      Time.local(2016, 2, 23, 7, 0),
+      Time.local(2016, 2, 23, 10, 0),
     ]
   end
   let(:timers) { timer_dates.each_with_index.map { |d, i| create_timer(i, d) } }
@@ -183,7 +192,9 @@ describe '#data' do
     it 'returns TimerDate objects' do
       allow(subject).to receive(:timers).and_return(timers)
       expect(
-        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30)).all? { |e| e.is_a? Domoticz::Device::TimerDate }
+        subject.next_timers(Time.local(2016, 2, 23, 7, 30)).all? do |e|
+          e.is_a? Domoticz::Device::TimerDate
+        end,
       ).to be true
     end
 
@@ -192,50 +203,58 @@ describe '#data' do
 
       allow(subject).to receive(:timers).and_return(timers)
       expect(
-        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30)).map(&:timer)
+        subject.next_timers(Time.local(2016, 2, 23, 7, 30)).map(&:timer),
       ).to eq(
-        [timers[0], timers[2]]
+        [timers[0], timers[2]],
       )
 
       # can be called twice
       expect(
-        subject.next_timers(DateTime.new(2016, 2, 23, 7, 30)).map(&:timer)
+        subject.next_timers(Time.local(2016, 2, 23, 7, 30)).map(&:timer),
       ).to eq(
-        [timers[0], timers[2]]
+        [timers[0], timers[2]],
       )
 
       # list can be empty
       expect(
-        subject.next_timers(DateTime.new(2016, 2, 23, 10, 1))
+        subject.next_timers(Time.local(2016, 2, 23, 10, 1)),
       ).to be_empty
     end
   end
   describe '#enum_next_timers' do
     subject { Domoticz::Device.new.tap { |s| s.idx = 1 } }
 
-    let(:now) { DateTime.new(2016, 2, 23, 0, 0) }
+    let(:now) { Time.new(2016, 2, 23, 0, 0) }
     it 'returns an enumerator on the next timers' do
       allow(subject).to receive(:timers).and_return(timers)
       expect(subject.enum_next_timers(now)).to be_a Enumerator
 
       expect(subject.enum_next_timers(now).first(3).map(&:date)).to eq(
-        timer_dates.sort.first(3)
+        timer_dates.sort.first(3),
       )
     end
     it 'supports infinite loop: case where there is a recurrent timer' do
-      allow(subject).to receive(:timers).and_return([
-                                                      Domoticz::Timer.new.tap do |t|
-                                                        t.data = {
-                                                          'Type' => Domoticz::Timer::ON_TIME,
-                                                          'Time' => '12:00',
-                                                          'Days' => Domoticz::Timer::EVERYDAY
-                                                        }
-                                                      end
-                                                    ])
-      first = DateTime.new(now.year, now.month, now.day, 12, 0)
+      allow(subject).to receive(:timers).and_return(
+        [
+          Domoticz::Timer.new.tap do |t|
+            t.data = {
+              'Type' => Domoticz::Timer::ON_TIME,
+              'Time' => '12:00',
+              'Days' => Domoticz::Timer::EVERYDAY,
+            }
+          end,
+        ],
+      )
+      first = Time.local(now.year, now.month, now.day, 12, 0)
       expect(
-        subject.enum_next_timers(now).map(&:date).first(3)
-      ).to eq(first.upto(first.next_day(2)).to_a)
+        subject.enum_next_timers(now).map(&:date).first(3),
+      ).to eq(
+        [
+          first,
+          first + 1.day,
+          first + 2.days,
+        ],
+      )
     end
   end
 
@@ -243,7 +262,10 @@ describe '#data' do
     subject { Domoticz::Device.new.tap { |s| s.idx = 1 } }
 
     it 'returns the lightlog' do
-      stub_server_with_fixture(params: 'type=lightlog&idx=1', fixture: 'lightlog.json')
+      stub_server_with_fixture(
+        params: 'type=lightlog&idx=1',
+        fixture: 'lightlog.json',
+      )
 
       lightlog = subject.lightlog
       expect(lightlog.size).to eq(378)
@@ -258,7 +280,10 @@ describe '#data' do
   describe '#templog' do
     subject { Domoticz::Device.new.tap { |s| s.idx = 1 } }
     it 'returns the temperature history for days' do
-      stub_server_with_fixture(params: 'type=graph&sensor=temp&idx=1&range=day', fixture: 'templog_day.json')
+      stub_server_with_fixture(
+        params: 'type=graph&sensor=temp&idx=1&range=day',
+        fixture: 'templog_day.json',
+      )
 
       templog = subject.templog(:day)
       expect(templog.size).to eq(2017)
@@ -271,7 +296,10 @@ describe '#data' do
     end
 
     it 'returns the temperature history for months' do
-      stub_server_with_fixture(params: 'type=graph&sensor=temp&idx=1&range=month', fixture: 'templog_month.json')
+      stub_server_with_fixture(
+        params: 'type=graph&sensor=temp&idx=1&range=month',
+        fixture: 'templog_month.json',
+      )
 
       templog = subject.templog(:month)
       expect(templog.size).to eq(32)
@@ -284,7 +312,10 @@ describe '#data' do
     end
 
     it 'returns the temperature history for years' do
-      stub_server_with_fixture(params: 'type=graph&sensor=temp&idx=1&range=year', fixture: 'templog_year.json')
+      stub_server_with_fixture(
+        params: 'type=graph&sensor=temp&idx=1&range=year',
+        fixture: 'templog_year.json',
+      )
 
       templog = subject.templog(:year)
       expect(templog.size).to eq(358)

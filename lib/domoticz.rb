@@ -46,7 +46,7 @@ module Domoticz
       response = Net::HTTP.start(
         uri.hostname,
         uri.port,
-        use_ssl: uri.scheme == 'https'
+        use_ssl: uri.scheme == 'https',
       ) { |http| http.request(request) }
 
       response

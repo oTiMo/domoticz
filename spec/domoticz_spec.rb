@@ -62,7 +62,11 @@ describe Domoticz do
 
   describe '::sunrise_sunset' do
     it 'get the sunrise/sunset from the server' do
-      stub_server_with_fixture(params: 'type=command&param=getSunRiseSet', fixture: 'sunrise_sunset.json', required: true)
+      stub_server_with_fixture(
+        params: 'type=command&param=getSunRiseSet',
+        fixture: 'sunrise_sunset.json',
+        required: true,
+      )
       expect(Domoticz.sunrise_sunset).to be_a(Domoticz::SunriseSunset)
     end
   end

@@ -7,7 +7,7 @@ describe Domoticz::SunriseSunset do
     it 'can create object from a json definition' do
       json = JSON.parse(IO.read('spec/fixtures/sunrise_sunset.json'))
       expect(
-        Domoticz::SunriseSunset.new_from_json(json)
+        Domoticz::SunriseSunset.new_from_json(json),
       ).to be_a(Domoticz::SunriseSunset)
     end
   end
@@ -22,7 +22,7 @@ describe Domoticz::SunriseSunset do
         'Sunrise' => '07:28',
         'Sunset' => '18:11',
         'status' => 'OK',
-        'title' => 'getSunRiseSet'
+        'title' => 'getSunRiseSet',
       )
     end
   end

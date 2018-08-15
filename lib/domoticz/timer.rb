@@ -1,16 +1,27 @@
 # frozen_string_literal: true
 
+require "time-lord"
+
 module Domoticz
   class Timer
     attr_accessor :idx
     attr_accessor :data
 
     def method_missing(method_sym, *arguments, &block)
-      hash = Hash[@data.map { |k, v| [k.downcase, v] }]
       key = method_sym.to_s.downcase
 
-      if hash.key?(key)
-        hash[key]
+      if data_hash.key?(key)
+        data_hash[key]
+      else
+        super
+      end
+    end
+
+    def respond_to_missing?(method_sym, include_private)
+      key = method_sym.to_s.downcase
+
+      if data_hash.key?(key)
+        data_hash[key]
       else
         super
       end
@@ -37,12 +48,16 @@ module Domoticz
     FRIDAY = 0x10 | EVERYDAY | WEEKDAYS
     SATURDAY = 0x20 | EVERYDAY | WEEKENDS
     SUNDAY = 0x40 | EVERYDAY | WEEKENDS
-    DAYS = %i[sunday monday tuesday wednesday thursday friday saturday].freeze
-    DAY_FLAGS = Hash[DAYS.zip([SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY])]
+    DAYS = %i(sunday monday tuesday wednesday thursday friday saturday).freeze
+    DAY_FLAGS = Hash[
+      DAYS.zip([SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY])
+    ]
     def apply_to?(day)
       case day
-      when Symbol then (DAY_FLAGS[day] & @data['Days']) != 0
-      when Date then apply_to?(DAYS[day.wday])
+      when Symbol
+        (DAY_FLAGS[day] & @data['Days']) != 0
+      when Time
+        apply_to?(DAYS[day.wday])
       else
         raise "#{day.class}: unsupported type"
       end
@@ -62,27 +77,39 @@ module Domoticz
     BEFORE_SUNSET = 3
     AFTER_SUNSET = 4
     FIXED_DATE = 5
-    def next_date(date = DateTime.now)
+
+    def next_date(date = Time.now)
       case type
       when BEFORE_SUNRISE, AFTER_SUNRISE
-        if ([date.hour, date.min] <=> (t = Domoticz.sunrise_sunset.sunrise_array)) < 0
-          DateTime.new(date.year, date.month, date.day, *t)
+        sunrise = Domoticz.sunrise_sunset.sunrise_array
+        if ([date.hour, date.min] <=> sunrise).negative?
+          Time.local(date.year, date.month, date.day, *sunrise)
         else
-          DateTime.new(date.year, date.month, date.day, *t).next_day
+          Time.local(date.year, date.month, date.day, *sunrise) + 1.day
         end
       when BEFORE_SUNSET, AFTER_SUNSET
-        if ([date.hour, date.min] <=> (t = Domoticz.sunrise_sunset.sunset_array)) < 0
-          DateTime.new(date.year, date.month, date.day, *t)
+        sunset = Domoticz.sunrise_sunset.sunset_array
+        if ([date.hour, date.min] <=> sunset).negative?
+          Time.local(date.year, date.month, date.day, *sunset)
         else
-          DateTime.new(date.year, date.month, date.day, *t).next_day
+          Time.local(date.year, date.month, date.day, *sunset) + 1.day
         end
       when ON_TIME
-        c = DateTime.new(date.year, date.month, date.day, *time_array)
-        c.upto(c.next_day(7)).find { |d| date < d && apply_to?(d) }
+        c = Time.local(date.year, date.month, date.day, *time_array)
+        while c < c + 7.days
+          return c if date < c && apply_to?(c)
+          c += 1.day
+        end
       when FIXED_DATE
-        c = DateTime.new(*(date_array + time_array))
+        c = Time.local(*(date_array + time_array))
         c if c > date
       end
+    end
+
+    private
+
+    def data_hash
+      Hash[@data.map { |k, v| [k.downcase, v] }]
     end
   end
 end
